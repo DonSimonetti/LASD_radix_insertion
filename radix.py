@@ -1,7 +1,7 @@
-def countingSort(A):
-    nMax = max(A)
+def countingsort(A):
+    n_max = max(A)
 
-    C = [0] * (nMax + 1)
+    C = [0] * (n_max + 1)
     B = [0] * A.__len__()
 
     for i in range(A.__len__()):
@@ -17,7 +17,7 @@ def countingSort(A):
     return B
 
 
-def countingSortPerCipher(A, cifra=0, base=10):
+def countingsort_per_cipher(A, cifra=0, base=10):
     C = [0] * base
     B = [0] * A.__len__()
 
@@ -33,28 +33,29 @@ def countingSortPerCipher(A, cifra=0, base=10):
 
     return B
 
+
 def radixsort(A):
     # sottraggo il minimo
-    arrMin = min(A)
+    arr_min = min(A)
     for i in range(A.__len__()):
-        A[i] -= arrMin
+        A[i] -= arr_min
 
     # calcolo numero di cifre
     n = max(A)
 
     base = 10
     cifre = 1
-    while (n / base > 1):
+    while n / base > 1:
         cifre += 1
-        n=int(n/base)
+        n = int(n / base)
 
     # ordinamento
 
     for i in range(cifre):
-        A=countingSortPerCipher(A,i)
+        A = countingsort_per_cipher(A, i)
 
     # riaggiungo il minimo
     for i in range(A.__len__()):
-        A[i] += arrMin
+        A[i] += arr_min
 
     return A

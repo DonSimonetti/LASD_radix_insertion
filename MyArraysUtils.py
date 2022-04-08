@@ -18,7 +18,7 @@ def generate_arrays(number):
     for i in range(0, number):
         arrays_list.append(random_array(array_size))
         array_size *= 10
-        print("Generated array",i)
+        print("Generated array", i)
 
 
 def perform_insertion_sort_analysis():
