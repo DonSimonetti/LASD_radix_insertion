@@ -1,0 +1,53 @@
+3.8.3 (default, May 19 2020, 23:52:23) 
+[GCC 9.3.0]
+Generating 6 arrays..
+Generated array 0
+Generated array 1
+Generated array 2
+Generated array 3
+Generated array 4
+Generated array 5
+Done
+Starting test with InsertionSort
+InsertionSort array #1. size: 10
+Executed in 7.2479248046875e-05 seconds
+
+InsertionSort array #2. size: 100
+Executed in 0.0050373077392578125 seconds
+
+InsertionSort array #3. size: 1000
+Executed in 0.5351424217224121 seconds
+
+InsertionSort array #4. size: 10000
+Executed in 57.547576665878296 seconds
+
+InsertionSort array #5. size: 100000
+Executed in 5897.181181192398 seconds
+
+InsertionSort array #6. size: 1000000
+Executed in 602469.6626327038 seconds
+
+
+Starting test with RadixSort
+RadixSort array #1. size: 10
+Executed in 0.0006279945373535156 seconds
+
+RadixSort array #2. size: 100
+Executed in 0.0031681060791015625 seconds
+
+RadixSort array #3. size: 1000
+Executed in 0.030956506729125977 seconds
+
+RadixSort array #4. size: 10000
+Executed in 0.3164803981781006 seconds
+
+RadixSort array #5. size: 100000
+Executed in 3.2067415714263916 seconds
+
+RadixSort array #6. size: 1000000
+Executed in 32.231030225753784 seconds
+
+
+real	10141m12.976s
+user	10136m5.554s
+sys	0m0.570s
