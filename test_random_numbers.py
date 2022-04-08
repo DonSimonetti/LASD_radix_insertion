@@ -7,10 +7,9 @@ print(sys.version)
 num_arrays = sys.argv[1]
 
 generate_arrays_only = False
-for i in range(1, len(sys.argv)):
-    if str(sys.argv[i]) == "-generate_arrays_only":
-        generate_arrays_only = True
-        print("Generating arrays only")
+if "-generate_arrays_only" in sys.argv:
+    generate_arrays_only = True
+    print("Generating arrays only")
 
 print("Generating", num_arrays, "arrays..")
 mut.generate_arrays(int(num_arrays))
