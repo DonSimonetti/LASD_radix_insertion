@@ -1,0 +1,1 @@
+time python test_random_numbers.py 4 > output_$(date +%Y-%m-%d-%H-%M-%S).log
